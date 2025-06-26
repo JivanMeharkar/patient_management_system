@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Update Patient | Patient Management System</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">🏥 Patient Management</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="viewPatient.html">View</a>
+        <a href="addPatient.html">Add</a>
+        <a href="deletePatient.html">Delete</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <section class="intro">
+      <h1>✏️ Update Patient</h1>
+      <p>Enter the patient ID and update the necessary information.</p>
+    </section>
+
+    <section class="form-section">
+      <form id="updatePatientForm">
+        <label for="updatePatientId">Patient ID</label>
+        <input type="number" id="updatePatientId" placeholder="Enter Patient ID" required />
+
+        <label for="updateFirstName">First Name</label>
+        <input type="text" id="updateFirstName" placeholder="First Name" required />
+
+        <label for="updateLastName">Last Name</label>
+        <input type="text" id="updateLastName" placeholder="Last Name" required />
+
+        <label for="updateDob">Date of Birth</label>
+        <input type="date" id="updateDob" required />
+
+        <label for="updateGender">Gender</label>
+        <input type="text" id="updateGender" placeholder="Gender" required />
+
+        <label for="updateContactNumber">Contact Number</label>
+        <input type="tel" id="updateContactNumber" placeholder="Contact Number" required />
+
+        <label for="updateEmail">Email</label>
+        <input type="email" id="updateEmail" placeholder="Email" required />
+
+        <label for="updateAddress">Address</label>
+        <input type="text" id="updateAddress" placeholder="Address" required />
+
+        <label for="updateEmergencyContactName">Emergency Contact Name</label>
+        <input type="text" id="updateEmergencyContactName" placeholder="Emergency Contact Name" required />
+
+        <label for="updateEmergencyContactPhone">Emergency Contact Phone</label>
+        <input type="tel" id="updateEmergencyContactPhone" placeholder="Emergency Contact Phone" required />
+
+        <button type="button" class="update-btn" onclick="updatePatient()">Update Patient</button>
+      </form>
+    </section>
+
+    <section class="action-buttons">
+      <button onclick="window.location.href='index.html'">🏠 Back to Home</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MedCare Hospital. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

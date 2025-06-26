@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient Management System</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+   
+      <div class="logo">🏥 Patient Management</div>
+     </div>
+   
+  </header>
+
+  <main class="main-container">
+    <section class="intro">
+      <h1>Welcome to the Patient Management System</h1>
+      <p>Efficiently manage your hospital's patient records with ease.</p>
+    </section>
+
+    <section class="patients-section">
+      <h2>👨‍⚕️ All Patients</h2>
+      <div id="patientsList" class="patients-list">
+        <!-- Patients will be added here -->
+      </div>
+    </section>
+
+    <section class="action-buttons">
+      <button onclick="window.location.href='addPatient.html'">➕ Add Patient</button>
+      <button onclick="window.location.href='viewPatient.html'">👁️ View Patient</button>
+      <button onclick="window.location.href='updatePatient.html'">✏️ Update Patient</button>
+      <button onclick="window.location.href='deletePatient.html'">🗑️ Delete Patient</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MedCare Hospital. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
